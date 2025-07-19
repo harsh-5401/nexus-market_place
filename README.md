@@ -2,9 +2,11 @@
 
 A beautiful listing platform where users can browse items posted by others.
 
-## Live Demo
+## 🚀 Live Demo
 
-Check out the live version here: [Nexus Marketplace]([https://nexus-marketplace.netlify.app/])
+Check out the live version of the project here:  
+👉 [Nexus Marketplace](https://nexus-marketplace.netlify.app/)
+
 
 ## What I Built
 
