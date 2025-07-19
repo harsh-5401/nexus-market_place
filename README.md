@@ -2,6 +2,10 @@
 
 A beautiful listing platform where users can browse items posted by others.
 
+## Live Demo
+
+Check out the live version here: [Nexus Marketplace](https://nexus-marketplace.netlify.app/users)
+
 ## What I Built
 
 I created a modern website where people can see items that others are selling. Each listing shows:
@@ -69,6 +73,44 @@ I created a modern website where people can see items that others are selling. E
 7. I made sure everything works on different screen sizes
 8. I added dark mode support
 
+### Data Handling
+
+For this project, I'm using static JSON data stored locally. However, I've built the app with real-world usage in mind:
+
+- Created a reusable API connector service using Axios that makes it easy to switch to a real backend later
+- Set up Redux slices that can be easily modified to work with real API endpoints
+- Added loading states and error handling as if working with real data
+
+### Component-Driven Approach
+
+I built this project using a component-driven approach:
+
+- Each UI element is a reusable component
+- Components are organized by function (UI components, feature components)
+- Used composition to build complex UIs from simple parts
+- Maintained consistent styling and behavior across components
+
+## Folder Structure
+
+```
+src/
+├── assets/           # Images and static assets
+├── components/       # Reusable UI components
+│   ├── ui/           # Basic UI components (buttons, cards, etc.)
+│   └── Common/       # Shared components used across features
+├── data/             # Static JSON data
+├── lib/              # Utility functions
+├── pages/            # Page components
+├── reducer/          # Redux root reducer
+├── services/         # API services
+│   └── apiconnector.ts  # Reusable API connector
+├── slices/           # Redux slices
+├── App.css           # Global styles
+├── App.tsx           # Main app component
+├── index.css         # Base styles
+└── main.tsx          # Entry point
+```
+
 ## How to Run the Project
 
 1. Clone the repository
@@ -81,5 +123,7 @@ npm install
 npm run dev
 ```
 4. Open your browser and go to the URL shown in the terminal
+
+
 
 
